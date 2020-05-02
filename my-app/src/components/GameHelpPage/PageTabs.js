@@ -5,7 +5,7 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
-import BaseCarPoolCard from "../GameHelpCard/BaseGameHelpCard";
+import BaseCarPoolCard from "../GameHelpCard/BaseCarPoolCard";
 
 function TabContainer(props) {
   return (

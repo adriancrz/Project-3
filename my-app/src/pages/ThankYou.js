@@ -6,7 +6,7 @@ import BottomNav from "../components/Nav/BottomNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import { withStyles } from '@material-ui/core/styles';
 // import MenuItem from '@material-ui/core/MenuItem';
-import Image from "../components/LandingPage/assets/pexels-photo-1557549.jpeg";
+import Image from "../components/LandingPage/assets/Hk2qQpV.jpg";
 import Styled from "styled-components";
 
 const styles = theme => ({

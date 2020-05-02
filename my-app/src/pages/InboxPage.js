@@ -3,7 +3,7 @@ import BaseInboxCard from "../components/Inbox/BaseInboxCard";
 import Sidebar from "../components/Nav/SideBar/SideBar";
 import BottomNav from "../components/Nav/BottomNav";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/pexels-photo-533416.jpeg";
+import Image from "../components/LandingPage/assets/18retropromo-superJumbo.jpg";
 
 const InboxWrapper = Styled.div`
   display: grid;

@@ -4,7 +4,7 @@ import { withStyles } from "@material-ui/core/styles";
 import Styled from "styled-components";
 import BaseToolCard from "../components/ToolCard/BaseToolCard";
 import BaseGeneralCard from "../components/GeneralCard/BaseGeneralCard";
-import BaseCarPoolCard from "../components/CarPoolCard/BaseCarPoolCard";
+import BaseCarPoolCard from "../components/GameHelpCard/BaseCarPoolCard";
 import BottomNav from "../components/Nav/BottomNav";
 import MapCard from "../components/Map/MapCard";
 import SubmitModal from "../components/SubmitModal/SubmitModal";

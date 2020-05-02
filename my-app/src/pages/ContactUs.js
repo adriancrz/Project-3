@@ -9,7 +9,7 @@ import { withStyles } from '@material-ui/core/styles';
 // import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
 import Button from '../components/ContactUs/SubmitButton'
-import Image from "../components/LandingPage/assets/pexels-photo-302186.jpeg";
+import Image from "../components/LandingPage/assets/Banner_NewsFINAL.jpg";
 import Styled from "styled-components";
 
 const styles = theme => ({

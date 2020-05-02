@@ -53,7 +53,7 @@ class BottomNav extends React.Component {
             >
                 
                 <BottomNavigationAction classes={{ root: classes.icon }} label="Github" icon={<RestoreIcon />} onClick={() => {
-                    window.open("https://github.com/bootcamp-project-3/Project-3", '_blank');
+                    window.open("https://github.com/adriancrz/Project-3", '_blank');
                 }} /> />
                 <BottomNavigationAction classes={{ root: classes.icon }} label="Terms of Service" icon={<FavoriteIcon />} onClick={() => {
                     window.location = "/TermsOfService";

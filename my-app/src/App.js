@@ -13,8 +13,8 @@ import ContactUs from "./pages/ContactUs";
 import ThankYou from "./pages/ThankYou";
 import General from "./pages/General";
 import AboutUs from "./pages/AboutUs";
-import CarPool from "./pages/CarPool";
-import Equipment from "./pages/Equipment";
+import CarPool from "./pages/GameHelp";
+import Equipment from "./pages/MatchSearch";
 
 const theme = createMuiTheme({
   palette: {

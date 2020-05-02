@@ -1,7 +1,7 @@
 import React from "react";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/overhead.jpg";
+import Image from "../components/LandingPage/assets/Hk2qQpV.jpg";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { withStyles } from "@material-ui/core/styles";

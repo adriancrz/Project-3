@@ -8,7 +8,7 @@ import EnhancedTable from "./EnhancedTable";
 import TextField from "@material-ui/core/TextField";
 import Divider from "@material-ui/core/Divider";
 import Styled from "styled-components";
-import LoadingCircle from "../CarPoolCard/LoadingCircle";
+import LoadingCircle from "../GameHelpCard/LoadingCircle";
 
 function getModalStyle() {
   const top = 50;

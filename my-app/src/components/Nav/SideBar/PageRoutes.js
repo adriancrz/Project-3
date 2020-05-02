@@ -4,8 +4,8 @@ import {
   Public,
 } from "@material-ui/icons";
 import General from "../../../pages/General";
-import Carpool from "../../../pages/CarPool";
-import Equipment from "../../../pages/Equipment";
+import GameHelp from "../../../pages/GameHelp";
+import MatchSearch from "../../../pages/MatchSearch";
 
 const PageRoutes = [
   {
@@ -16,18 +16,18 @@ const PageRoutes = [
     component: General,
   },
   {
-    path: "/carpool",
-    sidebarName: "Car Pool",
-    navbarName: "Car Pool",
+    path: "/gamehelp",
+    sidebarName: "Game Help",
+    navbarName: "Game Help",
     icon: DirectionsCar,
-    component: Carpool,
+    component: GameHelp,
   },
   {
-    path: "/equipment",
-    sidebarName: "Equipment & Tools",
-    navbarName: "Equipment & Tools",
+    path: "/matchsearch",
+    sidebarName: "Match Search",
+    navbarName: "Match Search",
     icon: Build,
-    component: Equipment,
+    component: MatchSearch,
   }
 
 ];

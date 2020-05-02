@@ -4,7 +4,7 @@ import LpNav from "../components/LandingPage/LpNav";
 import Wrapper from "../components/LandingPage/Wrapper";
 import Button from "../components/LandingPage/LpButton";
 import Styled from "styled-components";
-import Image from "../components/LandingPage/assets/dog.jpg";
+import Image from "../components/LandingPage/assets/18retropromo-superJumbo.jpg";
 import BottomNav from "../components/Nav/BottomNav";
 import SignInModal from "../components/LandingPage/SignIn/SignInModal";
 import SignUpModal from "../components/LandingPage/SignUp/SignUpModal";
