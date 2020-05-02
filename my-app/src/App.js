@@ -1,72 +1,108 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
-import { Login, Register } from "./components/login/index";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Bulletin from "./pages/Bulletin";
+import Dashboard from "./pages/Dashboard";
+import HomePage from "./pages/HomePage";
+import InboxPage from "./pages/InboxPage";
+import NoMatch from "./pages/NoMatch";
+import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { createMuiTheme } from "@material-ui/core/styles";
+import TermsOfService from "./pages/TermsOfService";
+import ContactUs from "./pages/ContactUs";
+import ThankYou from "./pages/ThankYou";
+import General from "./pages/General";
+import AboutUs from "./pages/AboutUs";
+import CarPool from "./pages/CarPool";
+import Equipment from "./pages/Equipment";
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLogginActive: true
-    };
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      light: "#e8f5e9",
+      main: "#66bb6a",
+    },
+    secondary: {
+      light: "#fafafa",
+      main: "#DC143C",
+      dark: "#e0e0e0",
+    },
+  },
+});
+
+class App extends Component {
+  state = {
+    user: "",
+    location: "",
+    name: "",
+  };
+  componentDidUpdate() {
+    fetch("/api/session", {
+      method: "Get", // *GET, POST, PUT, DELETE, etc.
+      mode: "cors", // no-cors, cors, *same-origin
+      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: "include", // include, *same-origin, omit
+      headers: {
+        "Content-Type": "application/json",
+        // "Content-Type": "application/x-www-form-urlencoded",
+      },
+      redirect: "follow", // manual, *follow, error
+      referrer: "client", // no-referrer, *client
+    })
+      .then(res => res.json())
+      .then(
+        result => {
+          const { user, loc, name } = result.data;
+          console.log(result);
+          this.setState({
+            id: user,
+            location: loc,
+            name: name,
+          });
+        },
+        error => {
+          console.log(error);
+        }
+      );
   }
 
-  componentDidMount() {
-    //Add .right by default
-    this.rightSide.classList.add("right");
-  }
-
-  changeState() {
-    const { isLogginActive } = this.state;
-
-    if (isLogginActive) {
-      this.rightSide.classList.remove("right");
-      this.rightSide.classList.add("left");
-    } else {
-      this.rightSide.classList.remove("left");
-      this.rightSide.classList.add("right");
-    }
-    this.setState(prevState => ({ isLogginActive: !prevState.isLogginActive }));
-  }
+  updateAuth = user => {
+    this.setState({
+      user: user,
+    });
+  };
 
   render() {
-    const { isLogginActive } = this.state;
-    const current = isLogginActive ? "Register" : "Login";
-    const currentActive = isLogginActive ? "login" : "register";
     return (
-      <div className="App">
-        <div className="login">
-          <div className="container" ref={ref => (this.container = ref)}>
-            {isLogginActive && (
-              <Login containerRef={ref => (this.current = ref)} />
-            )}
-            {!isLogginActive && (
-              <Register containerRef={ref => (this.current = ref)} />
-            )}
-          </div>
-          <RightSide
-            current={current}
-            currentActive={currentActive}
-            containerRef={ref => (this.rightSide = ref)}
-            onClick={this.changeState.bind(this)}
-          />
+      <MuiThemeProvider theme={theme}>
+        <div>
+          <Router>
+            <div>
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/profile" component={Dashboard} />
+                <Route exact path="/bulletin" component={Bulletin} />
+                <Route exact path="/inbox" component={InboxPage} />
+                <Route exact path="/general" component={General} />
+                <Route exact path="/carpool" component={CarPool} />
+                <Route exact path="/equipment" component={Equipment} />
+
+                <Route
+                  exact
+                  path="/termsofservice"
+                  component={TermsOfService}
+                />
+                <Route exact path="/contact-us" component={ContactUs} />
+                <Route exact path="/thank-you" component={ThankYou} />
+                <Route exact path="/aboutus" component={AboutUs} />
+                <Route component={NoMatch} />
+              </Switch>
+            </div>
+          </Router>
         </div>
-      </div>
+      </MuiThemeProvider>
     );
   }
 }
-
-const RightSide = props => {
-  return (
-    <div
-      className="right-side"
-      ref={props.containerRef}
-      onClick={props.onClick}
-    >
-      <div className="inner-container">
-        <div className="text">{props.current}</div>
-      </div>
-    </div>
-  );
-};
 
 export default App;

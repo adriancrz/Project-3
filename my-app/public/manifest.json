@@ -1,9 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "DnD Party Finder",
+  "name": "Connect with other DnD enthusiast",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "../public/icons8-dungeons-and-dragons-48.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
