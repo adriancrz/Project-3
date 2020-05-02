@@ -71,8 +71,8 @@ class HomePage extends Component {
         <div>
           <LpNav />
           <Wrapper>
-            Share your lawnmower, host a cookout, give a ride.
-            <h1>Be Neighborly.</h1>
+            Find new players, matches, or help to better understand the game!.
+            <h1>DnD Party Finder</h1>
             <Button SUOpen={this.SUOpen} />
             <span>
               <p>

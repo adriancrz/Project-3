@@ -106,7 +106,7 @@ class General extends Component {
         result => {
           console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "General";
+            return post.category === "Player Search";
           });
           this.setState({
             posts: filteredPosts,
@@ -150,7 +150,7 @@ class General extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="General"
+              category="Player Search"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />

@@ -86,21 +86,7 @@ const GeneralItem = Styled.div`
   width: 199%;
 `;
 
-const EventItem = Styled.div`
-  grid-column-start: col-2;
-  grid-column-end: col-2;
-  grid-row-start: row-3;
-  grid-row-end: row-3;
-  margin: 0 5px 10px 0;
-`;
 
-const SkillsItem = Styled.div`
-  grid-column-start: col-3;
-  grid-column-end: col-3;
-  grid-row-start: row-3;
-  grid-row-end: row-3;
-  margin: 0 5px 10px 0;
-`;
 
 const ButtonWrapper = Styled.div`
   display: grid;
@@ -306,7 +292,7 @@ class Bulletin extends Component {
           </SideBarItem>
           <ToolItem>
             <BaseToolCard
-              category="Equipment/Tools"
+              category="Search for Matches"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
@@ -316,7 +302,7 @@ class Bulletin extends Component {
           </ToolItem>
           <CarPoolItem>
             <BaseCarPoolCard
-              category="Carpool"
+              category="GameHelp"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}
@@ -325,7 +311,7 @@ class Bulletin extends Component {
           </CarPoolItem>
           <GeneralItem>
             <BaseGeneralCard
-              category="General"
+              category="Search for Players"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
               updateReply={this.updateReply}

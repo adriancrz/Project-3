@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/EquipmentPage/PageTabs";
+import PageTabs from "../components/MatchSearchPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -104,7 +104,7 @@ class Equipment extends Component {
       .then(
         result => {
           const filteredPosts = result.filter(post => {
-            return post.category === "Equipment/Tools";
+            return post.category === "Match Search";
           });
           this.setState({
             posts: filteredPosts,
@@ -148,7 +148,7 @@ class Equipment extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="Equipment/Tools"
+              category="Match Search"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />

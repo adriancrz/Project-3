@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Sidebar from "../components/Nav/SideBar/SideBar";
-import PageTabs from "../components/CarPoolPage/PageTabs";
+import PageTabs from "../components/GameHelpPage/PageTabs";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
 import Typography from "@material-ui/core/Typography";
@@ -105,7 +105,7 @@ class Tools extends Component {
         result => {
           console.log(result);
           const filteredPosts = result.filter(post => {
-            return post.category === "Carpool";
+            return post.category === "Game Help";
           });
           this.setState({
             posts: filteredPosts,
@@ -149,7 +149,7 @@ class Tools extends Component {
           </SideBarItem>
           <TabItem>
             <PageTabs
-              category="CarPool"
+              category="Game Help"
               posts={this.state.posts}
               updatePosts={this.updatePosts}
             />

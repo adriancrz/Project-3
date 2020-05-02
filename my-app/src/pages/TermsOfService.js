@@ -73,23 +73,22 @@ const TermsOfService = props => {
             <CardContent>
               <h3>Terms and Conditions</h3>
 
-              <p>Last updated: 3/1/2019</p>
+              <p>Last updated: 5/2/2020</p>
 
               <p>
                 Please read these Terms and Conditionsn carefully before using
-                the http://www.Neighborly.com website operated by Neighborly
-                (us, we, or our). Your access to and use of the Neighborly is
+                this website.Your access to and use of DnD Party Finder is
                 conditioned on your acceptance of and compliance with these
                 Terms. These Terms apply to all visitors, users and others who
-                access or use Neighborly. By accessing or using Neighborly you
+                access or use DnD Party Finder. By accessing or using DnD Party Finder you
                 agree to be bound by these Terms. If you disagree with any part
-                of the terms then you may not access Neighborly.
+                of the terms then you may not access DnD Party Finder.
               </p>
 
               <h3>Content</h3>
 
               <p>
-                Neighborly allows you to post, link, store, share and otherwise
+                DnD Party Finder allows you to post, link, store, share and otherwise
                 make available certain information, text, graphics, videos, or
                 other material ("Content").{" "}
               </p>
@@ -97,12 +96,12 @@ const TermsOfService = props => {
               <h3>Links To Other Web Sites</h3>
 
               <p>
-                Neighborly may contain links to third-party web sites or
-                services that are not owned or controlled by Neighborly.
-                Neighborly has no control over, and assumes no responsibility
+                DnD Party Finder may contain links to third-party web sites or
+                services that are not owned or controlled by DnD Party Finder.
+                DnD Party Finder has no control over, and assumes no responsibility
                 for, the content, privacy policies, or practices of any third
                 party web sites or services. You further acknowledge and agree
-                that Neighborly shall not be responsible or liable, directly or
+                that DnD Party Finder shall not be responsible or liable, directly or
                 indirectly, for any damage or loss caused or alleged to be
                 caused by or in connection with use of or reliance on any such
                 content, goods or services available on or through any such web
