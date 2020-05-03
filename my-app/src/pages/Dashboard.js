@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import withStyles from "@material-ui/core/styles/withStyles";
+import {withStyles} from "@material-ui/core/styles";
 // import "../../src/App.css";
 // import "../components/ProfInfo/NameForm";
 import NameForm from "../components/ProfInfo/NameForm";
@@ -12,7 +12,7 @@ import BottomNav from "../components/Nav/BottomNav";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Image from "../components/LandingPage/assets/Banner_NewsFINAL.jpg";
+import Image from "../components/LandingPage/assets/Hk2qQpV.jpg";
 
 const styles = theme => ({
   card: {
