@@ -6,14 +6,21 @@ import Button from "@material-ui/core/Button";
 import EditIcon from "@material-ui/icons/Edit";
 import Typography from "@material-ui/core/Typography";
 // import "../../App.css";
-import withStyles from "@material-ui/core/styles/withStyles";
-import { createMuiTheme } from "@material-ui/core";
+import {withStyles} from "@material-ui/core/styles";
+//import { createMuiTheme } from "@material-ui/core";
 
 
 
-const theme = createMuiTheme({
+// const theme = createMuiTheme({
+//   typography: {
+//     fontFamily: ["Arvo", "serif"],
+//     fontSize: 26,
+//   },
+// });
+
+const style = theme => ({
   typography: {
-    fontFamily: ["Arvo", "serif"].join(","),
+    fontFamily: ["Arvo", "serif"],
     fontSize: 26,
   },
 });
@@ -50,4 +57,4 @@ function NameForm(props) {
   );
 }
 
-export default withStyles(theme)(NameForm);
+export default withStyles(style)(NameForm);
