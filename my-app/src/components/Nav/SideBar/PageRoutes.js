@@ -10,8 +10,8 @@ import MatchSearch from "../../../pages/MatchSearch";
 const PageRoutes = [
   {
     path: "/general",
-    sidebarName: "General",
-    navbarName: "General",
+    sidebarName: "Player Search",
+    navbarName: "Player Search",
     icon: Public,
     component: General,
   },
@@ -19,14 +19,14 @@ const PageRoutes = [
     path: "/gamehelp",
     sidebarName: "Game Help",
     navbarName: "Game Help",
-    icon: DirectionsCar,
+    icon: Build,
     component: GameHelp,
   },
   {
     path: "/matchsearch",
     sidebarName: "Match Search",
     navbarName: "Match Search",
-    icon: Build,
+    icon: DirectionsCar,
     component: MatchSearch,
   }
 
