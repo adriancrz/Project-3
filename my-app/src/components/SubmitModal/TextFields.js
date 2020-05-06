@@ -35,23 +35,15 @@ const ButtonWrapper = Styled.div`
 `;
 
 const categories = [
+
   {
-    value: "Community Needs",
+    value: "Game Help",
   },
   {
-    value: "Events",
+    value: "Player Search",
   },
   {
-    value: "Carpool",
-  },
-  {
-    value: "General",
-  },
-  {
-    value: "Equipment/Tools",
-  },
-  {
-    value: "Skills/Services",
+    value: "Match Search",
   },
 ];
 

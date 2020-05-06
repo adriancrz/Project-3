@@ -49,7 +49,7 @@ class BaseCarPoolCard extends Component {
   renderCards = () => {
     const posts = this.props.posts;
     return posts
-      .filter(post => post.category === "Carpool")
+      .filter(post => post.category === "Game Help")
       .slice(0, 9)
       .map((post, index) => {
         return (
@@ -79,7 +79,7 @@ class BaseCarPoolCard extends Component {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Link to="/carpool" style={linkStyle}>
+          <Link to="/gamehelp" style={linkStyle}>
             <Button color="default" className={classes.button} size="large">
               {this.props.category}
             </Button>

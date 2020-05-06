@@ -65,7 +65,7 @@ class PageTabs extends React.Component {
         {value === 0 && (
           <TabContainer>
             <BaseGeneralCard
-              category="General"
+              category="Player Search"
               posts={this.props.posts.filter((post, index) => {
                 return index < 9;
               })}
