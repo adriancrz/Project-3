@@ -6,6 +6,7 @@ import {withStyles} from "@material-ui/core/styles";
 // import "../components/ProfInfo/NameForm";
 import NameForm from "../components/ProfInfo/NameForm";
 import ZipForm from "../components/ProfInfo/ZipForm";
+import GameTypeForm from "../components/ProfInfo/GameTypeForm";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
@@ -57,6 +58,14 @@ const NameItem = Styled.div`
 `;
 
 const ZipItem = Styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  grid-row-start: row-2;
+  grid-row-end: span row-2;
+  margin: 15px;
+`;
+
+const GameTypeItem = Styled.div`
   grid-column-start: col-1;
   grid-column-end: col-1;
   grid-row-start: row-2;
@@ -200,6 +209,15 @@ class Dashboard extends Component {
                     className="nameForm"
                   />
                 </NameItem>
+                <GameTypeItem>
+                  <GameTypeForm
+                    zip={this.state.prevLocation}
+                    nameDisabled={this.state.locationDisabled}
+                    handleClick={this.handleClick}
+                    handleChange={this.handleChange}
+                    className="zipInput"
+                  />
+                </GameTypeItem>
                 <ZipItem>
                   <ZipForm
                     zip={this.state.prevLocation}
