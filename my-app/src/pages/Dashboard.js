@@ -5,6 +5,7 @@ import {withStyles} from "@material-ui/core/styles";
 // import "../../src/App.css";
 // import "../components/ProfInfo/NameForm";
 import NameForm from "../components/ProfInfo/NameForm";
+import AvatarForm from "../components/ProfInfo/AvatarForm";
 import ZipForm from "../components/ProfInfo/ZipForm";
 import GameTypeForm from "../components/ProfInfo/GameTypeForm";
 import GameStyleForm from "../components/ProfInfo/GameStyleForm";
@@ -236,6 +237,7 @@ class Dashboard extends Component {
             </Typography>
             <Grid>
               <form className="formGrid" onSubmit={this.updateProfile}>
+                <AvatarForm></AvatarForm>
                 <NameItem>
                   <NameForm
                     name={this.state.prevnotName}
