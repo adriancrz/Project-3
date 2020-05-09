@@ -1,12 +1,17 @@
 import React, { Component } from "react";
-import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button"; 
 import Typography from "@material-ui/core/Typography";
 import {withStyles} from "@material-ui/core/styles";
 // import "../../src/App.css";
 // import "../components/ProfInfo/NameForm";
 import NameForm from "../components/ProfInfo/NameForm";
+import AvatarForm from "../components/ProfInfo/AvatarForm";
 import ZipForm from "../components/ProfInfo/ZipForm";
 import GameTypeForm from "../components/ProfInfo/GameTypeForm";
+import GameStyleForm from "../components/ProfInfo/GameStyleForm";
+import RoleForm from "../components/ProfInfo/RoleForm";
+import AvailabilityForm from "../components/ProfInfo/AvailabilityForm";
+import ContactInfoForm from "../components/ProfInfo/ContactInfoForm";
 import SideBar from "../components/Nav/SideBar/SideBar";
 import Styled from "styled-components";
 import BottomNav from "../components/Nav/BottomNav";
@@ -66,6 +71,38 @@ const ZipItem = Styled.div`
 `;
 
 const GameTypeItem = Styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  grid-row-start: row-2;
+  grid-row-end: span row-2;
+  margin: 15px;
+`;
+
+const GameStyleItem = Styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  grid-row-start: row-2;
+  grid-row-end: span row-2;
+  margin: 15px;
+`;
+
+const RoleItem = Styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  grid-row-start: row-2;
+  grid-row-end: span row-2;
+  margin: 15px;
+`;
+
+const AvailabilityItem = Styled.div`
+  grid-column-start: col-1;
+  grid-column-end: col-1;
+  grid-row-start: row-2;
+  grid-row-end: span row-2;
+  margin: 15px;
+`;
+
+const ContactInfoItem = Styled.div`
   grid-column-start: col-1;
   grid-column-end: col-1;
   grid-row-start: row-2;
@@ -200,6 +237,7 @@ class Dashboard extends Component {
             </Typography>
             <Grid>
               <form className="formGrid" onSubmit={this.updateProfile}>
+                <AvatarForm></AvatarForm>
                 <NameItem>
                   <NameForm
                     name={this.state.prevnotName}
@@ -218,6 +256,42 @@ class Dashboard extends Component {
                     className="zipInput"
                   />
                 </GameTypeItem>
+                <GameStyleItem>
+                  <GameStyleForm
+                    zip={this.state.prevLocation}
+                    nameDisabled={this.state.locationDisabled}
+                    handleClick={this.handleClick}
+                    handleChange={this.handleChange}
+                    className="zipInput"
+                  />
+                </GameStyleItem>
+                <RoleItem>
+                  <RoleForm
+                    zip={this.state.prevLocation}
+                    nameDisabled={this.state.locationDisabled}
+                    handleClick={this.handleClick}
+                    handleChange={this.handleChange}
+                    className="zipInput"
+                  />
+                </RoleItem>
+                <AvailabilityItem>
+                  <AvailabilityForm
+                    zip={this.state.prevLocation}
+                    nameDisabled={this.state.locationDisabled}
+                    handleClick={this.handleClick}
+                    handleChange={this.handleChange}
+                    className="zipInput"
+                  />
+                </AvailabilityItem>
+                <ContactInfoItem>
+                  <ContactInfoForm
+                    zip={this.state.prevLocation}
+                    nameDisabled={this.state.locationDisabled}
+                    handleClick={this.handleClick}
+                    handleChange={this.handleChange}
+                    className="zipInput"
+                  />
+                </ContactInfoItem>
                 <ZipItem>
                   <ZipForm
                     zip={this.state.prevLocation}
