@@ -6,7 +6,8 @@ import Dashboard from "./pages/Dashboard";
 import HomePage from "./pages/HomePage";
 import InboxPage from "./pages/InboxPage";
 import NoMatch from "./pages/NoMatch";
-import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+//import MuiThemeProvider from "@material-ui/core/styles/MuiThemeProvider";
 import { createMuiTheme } from "@material-ui/core/styles";
 import TermsOfService from "./pages/TermsOfService";
 import ContactUs from "./pages/ContactUs";
@@ -84,8 +85,8 @@ class App extends Component {
                 <Route exact path="/bulletin" component={Bulletin} />
                 <Route exact path="/inbox" component={InboxPage} />
                 <Route exact path="/general" component={General} />
-                <Route exact path="/carpool" component={CarPool} />
-                <Route exact path="/equipment" component={Equipment} />
+                <Route exact path="/gamehelp" component={CarPool} />
+                <Route exact path="/matchsearch" component={Equipment} />
 
                 <Route
                   exact
