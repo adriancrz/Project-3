@@ -8,6 +8,7 @@ import Divider from "@material-ui/core/Divider";
 import Typography from "@material-ui/core/Typography";
 import Styled from "styled-components";
 import LoadingCircle from "../LoadingCircle/LoadingCircle";
+import ReactMapGL from "react-map-gl";
 
 const styles = theme => ({
   bullet: {
