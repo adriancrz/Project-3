@@ -14,6 +14,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Modal from "@material-ui/core/Modal";
 import SnackBar from "../components/SnackBar/SnackBar";
+import ReactMapGL from "react-map-gl";
 
 function getModalStyle() {
   const top = 50;
