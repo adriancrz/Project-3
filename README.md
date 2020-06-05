@@ -2,6 +2,12 @@ DnD Party Finder is a dynamic web application that encourages relationships betw
 
 <img src= "readmeimages/Screen%20Shot%202020-06-05%20at%203.41.47%20PM.png">
 
+<img src= "rreadmeimages/Screen%20Shot%202020-06-05%20at%203.42.13%20PM.png">
+
+<img src= "rreadmeimages/Screen%20Shot%202020-06-05%20at%203.42.39%20PM.png">
+
+
+
 ## Technology Utilized
 <ul>
   <li>Node.js</li>
