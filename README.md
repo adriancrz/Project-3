@@ -20,4 +20,9 @@ DnD Party Finder is a dynamic web application that encourages relationships betw
 - Adrián Cruz
 - Kent Valle
 
+## Instructions
+1) clone repository
+2) type "npm install" on terminal command line
+3) type "npm start" on terminal command line
+4) page will start on localhost/3000
 
