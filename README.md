@@ -1,3 +1,4 @@
+## Description
 DnD Party Finder is a dynamic web application that encourages relationships between DnD fans and players. By geo-targeting users, DnD Party Finder provides an outlet for DnD players to meet other fans, engage in additional matches, join new guilds or simply expande their knowledge of the game.
 
 <img src= "readmeimages/Screen%20Shot%202020-06-05%20at%203.41.47%20PM.png">
@@ -20,4 +21,3 @@ DnD Party Finder is a dynamic web application that encourages relationships betw
 - Kent Valle
 
 
-Please reference the "readimages" folder for additional previews of the website.
