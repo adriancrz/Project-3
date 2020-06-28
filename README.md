@@ -18,6 +18,7 @@ DnD Party Finder is a dynamic web application that encourages relationships betw
 
 ## Contributors
 - Adrián Cruz, Project Manager, Lead Designer, Developer
+- Kent Valle, Developer
 
 ## Instructions
 1) clone repository
